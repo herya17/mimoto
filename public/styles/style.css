@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+.input {
+  width: 400px;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+form {
+  margin: 20px 0;
+}
+
+.btn-submit:hover {
+  background-color: #acacac;
+  cursor: pointer;
+}
+
+.input input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+/* Styling pendukung */
+.wrapper div {
+  border: 1px solid black;
+}
+
+.logo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 10px;
+  align-content: center;
+}
+
+.logo img {
+  width: 100px;
+  margin: auto 45px;
+}
+
+.title {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  text-align: center;
+}
+
+.title h1 {
+  margin-top: 40px;
+}
+
+.menu {
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+.side-menu {
+  min-height: 100%;
+  padding: 20px 0 300px 0;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu li {
+  margin: 13px 20px;
+}
+
+.side-menu button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid grey;
+}
+
+.side-menu button:hover {
+  background-color: #acacac;
+  cursor: pointer;
+}
+
+.content {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  padding: 20px 30px;
+}
+
+.article {
+  border: none !important;
+}
+
+.article a {
+  color: purple;
+}
+
+.article a:hover {
+  color: #af07af;
+}
+
+.article-1 {
+  margin: 15px 10px;
+  padding: 10px 17px;
+  border-radius: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  min-height: 300px;
+}
+
+.list-client {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border: none !important;
+}
+
+.list-client img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  min-height: 200px;
+}
